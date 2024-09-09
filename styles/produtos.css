@@ -1,0 +1,60 @@
+@import "root.css";
+
+body {
+  background-color: var(--branco);
+}
+
+main {
+  padding: 0 15%;;
+}
+
+h1 {
+  color: var(--preto);
+}
+
+section {
+  margin: 2rem 0;
+
+  .card{
+    .btn-primary{
+      background-color: var(--laranja);
+      border-color: var(--laranja);
+      transition: all 0.3s;
+      font-weight: bold;
+
+      &:hover{
+        background-color: var(--laranja2);
+        border-color: var(--laranja2);
+        
+        &::before{
+          content: 'Ver detalhes - ';
+        }
+      }
+    }
+
+    .btn-secondary{
+      background-color: var(--verde);
+      border-color: var(--verde);
+      transition: all 0.3s;
+
+      &:hover{
+        background-color: var(--verde2);
+        border-color: var(--verde2);
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px){
+  main{
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  main{
+    padding: 0 1rem;
+  }
+}
+
