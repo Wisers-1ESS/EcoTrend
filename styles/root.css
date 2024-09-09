@@ -6,3 +6,24 @@
   --laranja: #dda15e;
   --laranja2: #bc6c25;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  color: #fefae0;
+}
+
+footer a {
+  color: #fefae0;
+}

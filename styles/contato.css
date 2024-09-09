@@ -1,0 +1,98 @@
+@import './root.css';
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #fefae0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.form-section .col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.form-section .col-left, .form-section .col-right {
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        flex-direction: column;
+    }
+}
+
+.contact-form {
+    margin-top: 200px;
+    margin-left: 12%;
+    padding: 20px;
+    width: 1000px;
+    background-color: #dda25e2f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(206, 0, 0, 0.1);
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 35px;
+}
+
+
+
+.col input,textarea {
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgba(252, 252, 252, 0.623);
+}
+
+.form-control  {
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgba(252, 252, 252, 0.623);
+}
+
+.img {
+    background-image: url(../img/imagem_2024-09-09_150123419-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    width: 350px;
+    rotate: -40deg;
+    transition: .5s;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+}
+
+h2{
+    margin-left: 450px;
+}
+
