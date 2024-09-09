@@ -17,14 +17,51 @@ main{
 }
 
 footer {
-  position: relative;
-  bottom: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
   width: 100%;
-  background-color: rgb(34, 34, 34);
-  color: #fefae0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: auto; 
 }
 
-footer a {
-  color: #fefae0;
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content div {
+  margin: 10px 0;
+}
+
+footer .footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .footer-content a:hover {
+  text-decoration: underline;
+}
+
+footer .social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-content {
+      flex-direction: column;
+  }
+
+  footer .social-icons {
+      margin-top: 10px;
+  }
 }
