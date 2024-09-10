@@ -198,20 +198,20 @@
       // Função para criar os cards dinamicamente
       function criarCard(produto) {
         return `
-    <div class="col">
-      <div class="card h-100">
-        <img src="${produto.img}" class="card-img-top" alt="${produto.nome}" />
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">${produto.nome}</h5>
-          <p class="card-text">${produto.descricao}</p>
-          <div class="actions">
-            <a href="#" class="btn btn-primary w-100 mb-2">${produto.preco}</a>
-            <a href="#" class="btn btn-secondary w-100">Adicionar ao carrinho</a>
-         </div>
-        </div>
-      </div>
-    </div>
-  `;
+          <div class="col">
+            <div class="card h-100">
+              <img src="${produto.img}" class="card-img-top" alt="${produto.nome}" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">${produto.nome}</h5>
+                <p class="card-text">${produto.descricao}</p>
+                <div class="actions">
+                  <a href="detalhes.html?nome=${encodeURIComponent(produto.nome)}&descricao=${encodeURIComponent(produto.descricao)}&preco=${encodeURIComponent(produto.preco)}&img=${encodeURIComponent(produto.img)}" class="btn btn-primary w-100 mb-2">${produto.preco}</a>
+                  <a href="#" class="btn btn-secondary w-100">Adicionar ao carrinho</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        `;
       }
 
       // Função para renderizar os produtos em cada seção
