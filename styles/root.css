@@ -12,6 +12,25 @@ body {
   flex-direction: column;
 }
 
+.navbar {
+  background-color: #333;
+}
+
+.navbar-toggler{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
 main{
   flex: 1;
 }

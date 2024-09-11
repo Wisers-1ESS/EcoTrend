@@ -4,20 +4,6 @@ body {
   background-color: var(--branco);
 }
 
-.navbar {
-  background-color: #333;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-link {
-  color: #fff;
-  font-weight: bold;
-}
-
 main {
   padding: 0 15%;;
 }
